@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <title>CSS Media Queries</title>
+        <style>
+            .div1, .div2, .div3{
+                height: 400px;
+                width: 400px;
+                background-color: tomato;
+                float: left;
+                margin: 1px;
+            }
+            @media screen and (max-width: 768px) {
+                .div1, .div2, .div3{
+                background-color: blue;
+                width: 20%;
+
+                }
+            }
+        </style>
+    </head>
+    <div class="container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+
+    </div>
+</html>

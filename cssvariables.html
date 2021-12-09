@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <title>CSS variables</title>
+        <style>
+            /*global variable*/
+            :root{
+                --standard-font: Times, "Times New Roman";
+                --standard-height:400px;
+                --standard-width:400px;
+                
+            }
+            .div1{
+                /*local variable*/
+                --standars-backgroundcolor:blue;
+                font-family: var(--standard-font);
+                width: var(--standard-width);
+                height: var(--standard-height);
+                background-color: var(--standars-backgroundcolor)
+
+            }
+            .div2{
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+           web dev
+        </div>
+        <div class="div2">
+
+        </div>
+
+    </body>
+
+</html>
